@@ -1,0 +1,22 @@
+*using System;
+using System.Globalization;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double cotacaoDolar = 5.10;
+
+        Console.WriteLine("Digite o valor em dólar (USD):");
+        double valorDolar = Convert.ToDouble(Console.ReadLine());
+
+        double valorReais = valorDolar * cotacaoDolar;
+
+        CultureInfo culturaUS = new CultureInfo("en-US");
+        CultureInfo culturaBR = new CultureInfo("pt-BR");
+
+        Console.WriteLine("Valor em dólar: " + valorDolar.ToString("C", culturaUS));
+        Console.WriteLine("Cotação do dólar: " + cotacaoDolar.ToString("C", culturaBR));
+        Console.WriteLine("Valor em reais: " + valorReais.ToString("C", culturaBR));
+    }
+}
