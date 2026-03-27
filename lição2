@@ -1,0 +1,29 @@
+using System;
+
+namespace exer1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Hello World!");
+
+  
+        {
+            //static void Main(string[] args)
+            {
+                    // Parte 2 - Conversão de dólar para real
+                    Console.Write("\nDigite um valor em dólar: ");
+                    double valorDolar = double.Parse(Console.ReadLine());
+
+                    double cotacao = 5.10; // valor hipotético
+                    double valorEmReais = valorDolar * cotacao;
+
+                    Console.WriteLine("Valor em reais: R$ " + valorEmReais.ToString("F2"));
+
+                    Console.ReadKey();
+                }
+        }
+    }
+    }
+}
